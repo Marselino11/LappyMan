@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Screen2</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/screen2.css') }}"/>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    </head>
+    <body>
+        <nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Skills</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+        <form method="POST" action=""> 
+        <div class="container-fluid px-0">
+            <div class="contents col-md-12">
+                <div class="row justify-content-md-left">
+                    <div class="apps col-md-7">
+                        <h1>PICK YOUR TOP 3 APPS</h1>
+                        <div class="col col-md-12">
+                        <div class="row">
+                            <div class="container col-md-3">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="1" value="ArchiCAD">
+                                    <div class="card-content">
+                                        <img src="../static/img/Archicad.png" alt="AI">
+                                        <div class="content">
+                                            <h4>ArchiCAD</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+
+                            <div class="container col-md-3 .offset-md-0">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="2" value="AutoCAD 2023">
+                                    <div class="card-content">
+                                        <img src="../static/img/Autodesk AutoCAD.png" alt="AI">
+                                        <div class="content">
+                                            <h4>Autodesk AutoCAD</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+
+                            <div class="container col-md-3 .offset-md-0">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="3" value="Adobe Potoshop">
+                                    <div class="card-content">
+                                        <img src="../static/img/Adobe Photoshop.png" alt="AI">
+                                        <div class="content">
+                                            <h4>Adobe Photoshop</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+
+                            <div class="container col-md-3 .offset-md-0">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="4" value = "Proteus">
+                                    <div class="card-content">
+                                        <img src="../static/img/Proteus.png" alt="AI">
+                                        <div class="content">
+                                            <h4>Proteus</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="container col-md-3">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="5" value="Inkscape">
+                                    <div class="card-content">
+                                        <img src="../static/img/black bluestack.jpeg" alt="AI">
+                                        <div class="content">
+                                            <h4>bluestack</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+
+                            <div class="container col-md-3 .offset-md-0">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="6" value="Android Studio">
+                                    <div class="card-content">
+                                        <img src="../static/img/figma balck.png" alt="AI">
+                                        <div class="content">
+                                            <h4>Figma</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+
+                            <div class="container col-md-3 .offset-md-0">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="7" value="Corel Draw">
+                                    <div class="card-content">
+                                        <img src="../static/img/Corel Draw.png" alt="AI">
+                                        <div class="content">
+                                            <h4>Corel Draw</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+
+                            <div class="container col-md-3 .offset-md-0">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="8" value="Sketch">
+                                    <div class="card-content">
+                                        <img src="../static/img/labview black.png" alt="AI">
+                                        <div class="content">
+                                            <h4>LabVIEW</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="container col-md-3">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="9" value="Multisim">
+                                    <div class="card-content">
+                                        <img src="../static/img/Multisim.png" alt="AI">
+                                        <div class="content">
+                                            <h4>Multisim</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+
+                            <div class="container col-md-3 .offset-md-0">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="10" value="Filmora">
+                                    <div class="card-content">
+                                        <img src="../static/img/filmora black.png" alt="AI">
+                                        <div class="content">
+                                            <h4>Filmora</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="container col-md-3 .offset-md-0">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="11" value="MATLAB">
+                                    <div class="card-content">
+                                        <img src="../static/img/MatlabLogoExample_08.png" alt="AI">
+                                        <div class="content">
+                                            <h4>MATLAB</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+
+                            <div class="container col-md-3 .offset-md-0">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="12" value="SolidWorks">
+                                    <div class="card-content">
+                                        <img src="../static/img/solidworks2-removebg-preview.png" alt="AI">
+                                        <div class="content">
+                                            <h4>Solidworks</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="container col-md-3">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="13" value="ETABS">
+                                    <div class="card-content">
+                                        <img src="../static/img/lightworks black.png" alt="AI">
+                                        <div class="content">
+                                            <h4>lightworks</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+
+                            <div class="container col-md-3 .offset-md-0">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="14" value="OBS Studio">
+                                    <div class="card-content">
+                                        <img src="../static/img/OBS Studio.png" alt="AI">
+                                        <div class="content">
+                                            <h4>OBS Studio</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+
+                            <div class="container col-md-3 .offset-md-0">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="15" value="Anaconda">
+                                    <div class="card-content">
+                                        <img src="../static/img/Anaconda Navigator.png" alt="AI">
+                                        <div class="content">
+                                            <h4>Anaconda</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+
+                            <div class="container col-md-3 .offset-md-0">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="16"value="SketchUP">
+                                    <div class="card-content">
+                                        <img src="../static/img/SketchUp-removebg-preview.png" alt="AI">
+                                        <div class="content">
+                                            <h4>SketchUP</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="container col-md-3">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="17" value="Visual Studio Code">
+                                    <div class="card-content">
+                                        <img src="../static/img/Visual Studio Code.jpg" alt="AI">
+                                        <div class="content">
+                                            <h4>Visual Studio Code</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+
+                            <div class="container col-md-3 .offset-md-0">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="18" value="Unity">
+                                    <div class="card-content">
+                                        <img src="../static/img/Unity.jpeg" alt="AI">
+                                        <div class="content">
+                                            <h4>Unity</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+
+                            <div class="container col-md-3 .offset-md-0">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="19" value="KineMaster">
+                                    <div class="card-content">
+                                        <img src="../static/img/arduino-logo-black-hd-wallpaper-wallpaper-preview.jpg" alt="AI">
+                                        <div class="content">
+                                            <h4>Arduino IDE</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+                            
+                            <div class="container col-md-3 .offset-md-0">
+                                <label class="card">
+                                    <input type="checkbox" name="category" id="18" value="Adobe audition">
+                                    <div class="card-content">
+                                        <img src="../static/img/after effect adobe black.png" alt="AI">
+                                        <div class="content">
+                                            <h4>Adobe After effect</h4>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="line col-md-1">
+                </div>
+                <div class="price col-md-4">
+                    <h1>PICK YOUR BUDGET</h1>
+                    <div class="container d-grid gap-2">
+                        <label class="card">
+                            <input type="radio" name="budget" id="normal" value="5.000.000">
+                            <div class="card-content text">
+                                <h3>STANDAR</h3>
+                                <P>Rp 3.000.000 - Rp 8.000.000</P>
+                            </div>
+                        </label>
+                        <label class="card">
+                            <input type="radio" name="budget" id="medium" value="Rp15.000.000">
+                            <div class="card-content text">
+                                <h3>SULTAN</h3>
+                                <P>Rp 8.000.000 - Rp 15.000.000</P>
+                            </div>
+                        </label>
+                        <label class="card">
+                            <input type="radio" name="budget" id="god" value="Rp50.000.000">
+                            <div class="card-content text">
+                                <h3>DEWA</h3>
+                                <P>Rp 20.000.000 - Rp 50.000.000</P>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn btn-light" type="button">Back</button>
+                        <button class="btn btn-light" type="submit">
+
+                            Next
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </form>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

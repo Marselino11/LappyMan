@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+  
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-image: url('https://c0.wallpaperflare.com/preview/131/457/166/apple-black-colorful-colors.jpg');
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: aquamarine;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transition: .4s;
+}
+
+.contents {
+    padding: 20pt;
+}
+
+.apps {
+    /* background-color: antiquewhite; */
+    color: white;
+    font-weight: bold;
+}
+
+.price {
+    /* background-color:bisque; */
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 3px;
+}
+
+.card:active {
+    transform: scale(0.80);
+}
+
+.card input {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card input:checked~.card-content {
+    border-color: #1C4D90;
+}
+
+.card .card-content {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: all ease 0.3s;
+}
+
+.card:hover img {
+    width: 100%;
+    height: 100px;
+}
+
+.card input:checked~.card-content img {
+    filter: grayscale(0.4);
+}
+
+.content h4 {
+    margin: 0 0 8px 0;
+    color: black;
+}
+
+.content {
+    position: absolute;
+    bottom: -80px;
+    width: 100%;
+    padding: 0px;
+    background-color: #FFFFFF;
+    transition: all ease 0.3s;
+}
+
+.card:hover .content {
+    bottom: 0;
+}
+
+.card input:checked~.card-content:before,
+.card input:checked~.card-content:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+}
+
+.card-content:before {
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #FFFFFF;
+    background-color: #1C4D90;
+}
+
+.card-content:after {
+    height: 4px;
+    width: 8px;
+    top: 16px;
+    right: 16px;
+    border: 1px solid #FFFFFF;
+    border-width: 0 0 2px 2px;
+    transform: rotate(-45deg);
+}
+
+.line {
+    border-left: 3px #FFFFFF solid;
+    height: 1000px;
+    width: 0px;
+}
+
+.text {
+    position: relative;
+    display: inline-block;
+    color: #0ef;
+    background-color: #1e0638;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 5px #0ef;
+    padding: 20px;
+}
+
+.price {
+    left: -60px;
+}
+
+.d-grid {
+    padding-top: 50px;
+}
+
+.money {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 3px;
+}
